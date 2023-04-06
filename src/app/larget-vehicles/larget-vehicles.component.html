@@ -19,9 +19,9 @@
 </div> -->
 
 <div class="button-container">
-  <button type="button" (change)="selectedVehicle" value="Car" (click)="showInfo('Car')">Largest Car</button>
-  <button type="button" (change)="selectedVehicle" value="Airplane" (click)="showInfo('Airplane')">Largest Airplane</button>
-  <button type="button" (change)="selectedVehicle" value="Ship" (click)="showInfo('Ship')">Largest Ship</button>
+  <button type="button" (change)="selectedVehicle" (click)="showInfo('Car')">Largest Car</button>
+  <button type="button" (change)="selectedVehicle" (click)="showInfo('Airplane')">Largest Airplane</button>
+  <button type="button" (change)="selectedVehicle" (click)="showInfo('Ship')">Largest Ship</button>
 </div>
 <p>You selected {{selectedVehicle | uppercase}}</p>
 <div *ngIf="selectedVehicle === 'Car'">
