@@ -1,0 +1,38 @@
+<h2>Largest Vehicles on the Planet</h2>
+<!-- Var_1 -->
+<!-- <div class="button-container">
+  <button (click)="displayCar()">Largest Car</button>
+  <button (click)="displayAirplane()">Largest Airplane</button>
+  <button (click)="displayShip()">Largest Ship</button>
+</div>
+<div *ngIf="showCar">
+  <h3>Largest Car: {{car | uppercase}}</h3>
+  <p>The Rolls-Royce Cullinan is currently the largest car on the planet, measuring 5.3 meters (17.4 feet) in length and weighing in at 2.7 tonnes (5,940 pounds).</p>
+</div>
+<div *ngIf="showAirplane">
+  <h3>Largest Airplane: {{airplane | uppercase}}</h3>
+  <p>The Antonov An-225 Mriya is the largest airplane in the world, with a wingspan of 88.4 meters (290 feet) and a length of 84 meters (276 feet).</p>
+</div>
+<div *ngIf="showShip">
+    <h3>Largest Ship: {{ship | uppercase}}</h3>
+    <p>The Prelude FLNG (Floating Liquefied Natural Gas) is currently the largest ship on the planet, measuring 488 meters (1,601 feet) in length and 74 meters (243 feet) in width.</p>
+</div> -->
+
+<div class="button-container">
+  <button type="button" (change)="selectedVehicle" value="Car" (click)="showInfo('Car')">Largest Car</button>
+  <button type="button" (change)="selectedVehicle" value="Airplane" (click)="showInfo('Airplane')">Largest Airplane</button>
+  <button type="button" (change)="selectedVehicle" value="Ship" (click)="showInfo('Ship')">Largest Ship</button>
+</div>
+<p>You selected {{selectedVehicle | uppercase}}</p>
+<div *ngIf="selectedVehicle === 'Car'">
+  <h3>Largest Car: Rolls-Royce Cullinan</h3>
+  <p>The Rolls-Royce Cullinan is currently the largest car on the planet, measuring 5.3 meters (17.4 feet) in length and weighing in at 2.7 tonnes (5,940 pounds).</p>
+</div>
+<div *ngIf="selectedVehicle === 'Airplane'">
+  <h3>Largest Airplane: Antonov An-225 Mriya</h3>
+  <p>The Antonov An-225 Mriya is the largest airplane in the world, with a wingspan of 88.4 meters (290 feet) and a length of 84 meters (276 feet).</p>
+</div>
+<div *ngIf="selectedVehicle === 'Ship'">
+  <h3>Largest Ship: Prelude FLNG</h3>
+    <p>The Prelude FLNG (Floating Liquefied Natural Gas) is currently the largest ship on the planet, measuring 488 meters (1,601 feet) in length and 74 meters (243 feet) in width.</p>
+</div>

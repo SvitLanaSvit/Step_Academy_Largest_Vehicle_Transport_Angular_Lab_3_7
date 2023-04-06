@@ -1,0 +1,24 @@
+.button-container {
+  max-width: 515px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #0056b3;
+}
+
+h2{
+  margin-bottom: 10px;
+}
